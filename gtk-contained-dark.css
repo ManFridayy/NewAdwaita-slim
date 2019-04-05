@@ -122,7 +122,7 @@ treeview.view rubberband,
 }
 
 flowbox flowboxchild {
-  padding: 3px;
+  padding: 2px;
 }
 
 flowbox flowboxchild:selected {
@@ -130,7 +130,7 @@ flowbox flowboxchild:selected {
 }
 
 .content-view .tile {
-  margin: 2px;
+  margin: 1px;
   background-color: black;
   border-radius: 0;
   padding: 0;
@@ -261,9 +261,9 @@ spinner:checked:disabled {
 /**************** Text Entries * */
 spinbutton:not(.vertical),
 entry {
-  min-height: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
+  min-height: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
   border: 1px solid;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -275,12 +275,12 @@ entry {
 
 spinbutton:not(.vertical) image.left,
 entry image.left {
-  margin-right: 6px;
+  margin-right: 3px;
 }
 
 spinbutton:not(.vertical) image.right,
 entry image.right {
-  margin-left: 6px;
+  margin-left: 3px;
 }
 
 spinbutton.flat:focus:not(.vertical),
@@ -637,9 +637,9 @@ treeview entry:focus {
 notebook>header>tabs>arrow,
 button.titlebutton,
 button {
-  min-height: 24px;
+  min-height: 18px;
   min-width: 16px;
-  padding: 4px 9px;
+  padding: 3px 6px;
   border: 1px solid;
   border-radius: 5px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -929,30 +929,30 @@ button:disabled:checked {
 notebook>header>tabs>arrow.image-button,
 button.image-button.titlebutton,
 button.image-button {
-  min-width: 24px;
-  padding-left: 5px;
-  padding-right: 5px;
+  min-width: 18px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 notebook>header>tabs>arrow.text-button,
 button.text-button.titlebutton,
 button.text-button {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 notebook>header>tabs>arrow.text-button.image-button,
 button.text-button.image-button.titlebutton,
 button.text-button.image-button {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 notebook>header>tabs>arrow.text-button.image-button label,
 button.text-button.image-button.titlebutton label,
 button.text-button.image-button label {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 combobox:drop(active) button.combo,
@@ -976,8 +976,8 @@ row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled):ba
 }
 
 button.osd {
-  min-width: 26px;
-  min-height: 32px;
+  min-width: 18px;
+  min-height: 24px;
   color: #eeeeec;
   border-radius: 5px;
   color: #eeeeec;
@@ -994,7 +994,7 @@ button.osd {
 }
 
 button.osd.image-button {
-  min-width: 34px;
+  min-width: 24px;
 }
 
 button.osd:hover {
@@ -1735,8 +1735,8 @@ button.circular:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdr
   border-color: #1b1b1b;
   border-bottom-color: #070707;
   background-image: linear-gradient(to top, #323232 2px, #353535);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #323232 2px, #353535), linear-gradient(to top, #070707 25%, #1b1b1b 50%);
   border-color: transparent;
@@ -1747,8 +1747,8 @@ button.circular:hover:not(:checked):not(:active):not(:disabled):not(:backdrop) {
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #1b1b1b;
   border-bottom-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.786353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.786353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #323232, #373737 1px);
   background-image: linear-gradient(to top, #323232, #373737 1px), linear-gradient(to top, #070707 25%, #1b1b1b 50%);
@@ -1762,7 +1762,7 @@ stacksidebar row.needs-attention>label {
   background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#1f76e1), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.45, to(rgba(0, 0, 0, 0.834353)), to(transparent));
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
-  background-position: right 3px, right 2px;
+  background-position: right 3px, right 4px;
 }
 
 .stack-switcher>button.needs-attention>label:backdrop,
@@ -1774,7 +1774,7 @@ stacksidebar row.needs-attention>label:backdrop {
 .stack-switcher>button.needs-attention>label:dir(rtl),
 .stack-switcher>button.needs-attention>image:dir(rtl),
 stacksidebar row.needs-attention>label:dir(rtl) {
-  background-position: left 3px, left 2px;
+  background-position: left 3px, left 4px;
 }
 
 .inline-toolbar toolbutton>button {
@@ -1783,8 +1783,8 @@ stacksidebar row.needs-attention>label:dir(rtl) {
   border-color: #1b1b1b;
   border-bottom-color: #070707;
   background-image: linear-gradient(to top, #323232 2px, #353535);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
@@ -1793,8 +1793,8 @@ stacksidebar row.needs-attention>label:dir(rtl) {
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #1b1b1b;
   border-bottom-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.786353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.786353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #323232, #373737 1px);
 }
@@ -2054,7 +2054,7 @@ modelbutton.flat arrow.right {
 }
 
 button.color {
-  padding: 4px;
+  padding: 2px;
 }
 
 button.color colorswatch:only-child,
@@ -2352,15 +2352,15 @@ spinbutton.vertical:drop(active) {
 }
 
 spinbutton.vertical entry {
-  min-height: 32px;
-  min-width: 32px;
+  min-height: 24px;
+  min-width: 24px;
   padding: 0;
   border-radius: 0;
 }
 
 spinbutton.vertical button {
-  min-height: 32px;
-  min-width: 32px;
+  min-height: 24px;
+  min-width: 24px;
   padding: 0;
 }
 
@@ -2536,8 +2536,8 @@ searchbar>revealer>box:backdrop,
 /*************** Header bars * */
 .titlebar:not(headerbar),
 headerbar {
-  padding: 0 6px;
-  min-height: 46px;
+  padding: 0 5px;
+  min-height: 32px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #070707;
@@ -2558,8 +2558,8 @@ headerbar:backdrop {
 
 .titlebar:not(headerbar) .title,
 headerbar .title {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-weight: bold;
 }
 
@@ -2907,8 +2907,8 @@ headerbar.selection-mode button.suggested-action {
   border-color: #1b1b1b;
   border-bottom-color: #070707;
   background-image: linear-gradient(to top, #323232 2px, #353535);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   border-color: #030c17;
 }
@@ -2921,8 +2921,8 @@ headerbar.selection-mode button.suggested-action:hover {
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #1b1b1b;
   border-bottom-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.786353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.786353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #323232, #373737 1px);
   border-color: #030c17;
@@ -3084,14 +3084,14 @@ headerbar.selection-mode .selection-menu .arrow {
 
 .default-decoration.titlebar:not(headerbar),
 headerbar.default-decoration {
-  min-height: 28px;
-  padding: 4px;
+  min-height: 24px;
+  padding: 2px;
 }
 
 .default-decoration.titlebar:not(headerbar) button.titlebutton,
 headerbar.default-decoration button.titlebutton {
-  min-height: 26px;
-  min-width: 26px;
+  min-height: 22px;
+  min-width: 22px;
   margin: 0;
   padding: 0;
 }
@@ -3150,13 +3150,13 @@ headerbar entry,
 headerbar spinbutton,
 headerbar separator:not(.sidebar),
 headerbar button {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 headerbar switch {
-  margin-top: 9px;
-  margin-bottom: 9px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 headerbar.titlebar headerbar:not(.titlebar) {
@@ -3505,7 +3505,7 @@ treeview.view header.button.dnd:active,
 treeview.view header.button.dnd:selected,
 treeview.view header.button.dnd:hover,
 treeview.view header.button.dnd {
-  padding: 0 6px;
+  padding: 2px 6px;
   color: #2d2d2d;
   background-image: none;
   background-color: #15539e;
@@ -3523,7 +3523,7 @@ treeview.view acceleditor>label {
 treeview.view header button,
 treeview.view header button:hover,
 treeview.view header button:active {
-  padding: 0 6px;
+  padding: 2px 6px;
   background-image: none;
   border-style: none solid solid none;
   border-color: #353535;
@@ -3986,10 +3986,10 @@ notebook>header>tabs>arrow:disabled {
 }
 
 notebook>header tab {
-  min-height: 30px;
-  min-width: 30px;
+  min-height: 22px;
+  min-width: 22px;
   padding: 3px 12px;
-  outline-offset: -5px;
+  outline-offset: -3px;
   color: #919190;
   font-weight: bold;
   border-width: 1px;
@@ -4038,10 +4038,10 @@ notebook>header tab:backdrop:checked.reorderable-page {
 
 notebook>header tab button.flat {
   padding: 0;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  min-width: 20px;
-  min-height: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  min-width: 16px;
+  min-height: 16px;
 }
 
 notebook>header tab button.flat:hover {
@@ -4417,8 +4417,8 @@ switch slider {
   color: #eeeeec;
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   background-image: linear-gradient(to bottom, #2d2d2d 20%, #262626 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
@@ -4622,8 +4622,8 @@ radio {
   color: #eeeeec;
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   background-image: linear-gradient(to bottom, #2d2d2d 20%, #262626 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
@@ -5060,8 +5060,8 @@ scale slider {
   color: #eeeeec;
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   background-image: linear-gradient(to bottom, #2d2d2d 20%, #262626 90%);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.07);
   border: 1px solid black;
@@ -6302,7 +6302,7 @@ calendar:indeterminate {
 
 /*********** Dialogs * */
 messagedialog .titlebar {
-  min-height: 20px;
+  min-height: 0px;
   background-image: none;
   background-color: #353535;
   border-style: none;
@@ -6316,7 +6316,7 @@ messagedialog.csd.background {
 }
 
 messagedialog.csd .dialog-action-area button {
-  padding: 10px 14px;
+  padding: 3px 14px;
   border-radius: 0;
   border-left-style: solid;
   border-right-style: none;
@@ -6429,12 +6429,12 @@ placessidebar>viewport.frame {
 }
 
 placessidebar row {
-  min-height: 36px;
+  min-height: 26px;
   padding: 0px;
 }
 
 placessidebar row>revealer {
-  padding: 0 14px;
+  padding: 0 8px;
 }
 
 placessidebar row:selected {
@@ -6920,8 +6920,8 @@ colorswatch#add-color-button overlay {
   border-color: #1b1b1b;
   border-bottom-color: #070707;
   background-image: linear-gradient(to top, #323232 2px, #353535);
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
@@ -6930,8 +6930,8 @@ colorswatch#add-color-button overlay:hover {
   outline-color: rgba(238, 238, 236, 0.3);
   border-color: #1b1b1b;
   border-bottom-color: #070707;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.786353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.786353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.786353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.07);
   background-image: linear-gradient(to top, #323232, #373737 1px);
 }
@@ -7045,7 +7045,7 @@ messagedialog.csd decoration {
 
 .solid-csd decoration {
   margin: 0;
-  padding: 4px;
+  padding: 2px;
   background-color: #1b1b1b;
   border: solid 1px #1b1b1b;
   border-radius: 0;
@@ -7057,8 +7057,8 @@ messagedialog.csd decoration {
 }
 
 button.titlebutton {
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
-  -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.834353);
+  text-shadow: 0 1px rgba(0, 0, 0, 0.834353);
+  -gtk-icon-shadow: 0 1px rgba(0, 0, 0, 0.834353);
 }
 
 button.titlebutton:backdrop {
@@ -7303,13 +7303,13 @@ cursor-handle.insertion-cursor:active:dir(rtl) {
 }
 
 stackswitcher button.text-button {
-  min-width: 100px;
+  min-width: 60px;
 }
 
 stackswitcher button.circular,
 stackswitcher button.text-button.circular {
-  min-width: 32px;
-  min-height: 32px;
+  min-width: 24px;
+  min-height: 24px;
   padding: 0;
 }
 
